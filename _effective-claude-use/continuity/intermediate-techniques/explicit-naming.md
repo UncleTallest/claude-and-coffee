@@ -1,3 +1,8 @@
+---
+layout: guide
+title: 'Explicit Naming: Claude and User, Not You and Me'
+---
+
 # Explicit Naming: Claude and User, Not You and Me
 
 ## The Problem
@@ -17,11 +22,13 @@ Use names. Be explicit about who does what.
 ## Examples
 
 ### Ambiguous (Pronouns)
+
 ❌ "Ask me if you're not sure"
 ❌ "You should wait for my input before continuing"
 ❌ "I want you to be direct with me"
 
 ### Clear (Named)
+
 ✅ "Claude asks Jerry if Claude is uncertain"
 ✅ "Claude waits for Jerry's input before continuing"
 ✅ "Jerry wants Claude to be direct"
@@ -29,6 +36,7 @@ Use names. Be explicit about who does what.
 ## Why This Matters
 
 Instructions are being processed by Claude, about Claude, regarding its interaction with you. There are three parties in the instruction:
+
 1. The author (you, writing the guide)
 2. The subject (Claude, receiving the instruction)
 3. The object (you, as recipient of Claude's behavior)
@@ -39,7 +47,7 @@ Pronouns blur these roles. Names clarify them.
 
 In conversation, pronouns work. You're talking naturally, context is clear, and if there's confusion you can clarify immediately.
 
-In *instructions* - Communication Guides, Project Instructions, standing protocols - pronouns create persistent ambiguity that compounds over many sessions.
+In _instructions_ - Communication Guides, Project Instructions, standing protocols - pronouns create persistent ambiguity that compounds over many sessions.
 
 ## The Formality Objection
 
@@ -58,9 +66,11 @@ Ask: If someone else read this instruction out of context, would they know who d
 If not, replace pronouns with names.
 
 ### Before
+
 "You should check with me before making architectural decisions. I want you to explain the tradeoffs first."
 
 ### After
+
 "Claude checks with Jerry before making architectural decisions. Claude explains the tradeoffs first."
 
 Second version: no ambiguity, no inference required.
@@ -74,6 +84,7 @@ Better: "Ask me what I want when it's not clear"
 Best: "Claude asks Jerry what Jerry wants when the requirement is ambiguous"
 
 The final version:
+
 - Frames positively (ask, not don't assume)
 - Names explicitly (Claude, Jerry, not you, me)
 - Specifies the condition (when requirement is ambiguous)
@@ -99,11 +110,12 @@ This is especially useful if you run multiple instances - it reinforces each ins
 ## Common Mistake: Over-Applying
 
 Don't replace every pronoun everywhere. This is specifically for:
+
 - **Communication Guides** (standing instructions)
 - **Project Instructions** (operational protocols)
 - **Workflow documentation** (repeatable processes)
 
-In casual conversation, natural pronouns are fine. The rule applies to *persistent instructions*, not chat messages.
+In casual conversation, natural pronouns are fine. The rule applies to _persistent instructions_, not chat messages.
 
 ## Practical Exercise
 

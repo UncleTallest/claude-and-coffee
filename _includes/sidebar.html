@@ -1,0 +1,18 @@
+<nav class="docs-sidebar">
+  {% if page.collection == "effective-claude-use" %} {% assign active_collection
+  = site.effective-claude-use %} {% else %} {% assign active_collection =
+  site.resources %} {% endif %}
+
+  <div class="sidebar-module">
+    <h4 class="sidebar-heading">Guides Hierarchy</h4>
+    <ul class="sidebar-links">
+      {% for item in active_collection %}
+      <li class="{% if item.url == page.url %}active{% endif %}">
+        <a href="{{ item.url | relative_url }}"
+          >{{ item.title | default: item.name }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

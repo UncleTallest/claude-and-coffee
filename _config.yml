@@ -1,0 +1,48 @@
+title: Claude and Coffee Austin
+description: 'Building continuity with Claude through documentation and community.'
+website: 'https://claude-and-coffee.uncletallest-productions.org'
+url: 'https://claude-and-coffee.uncletallest-productions.org'
+logo: '/assets/images/logo_claude-and-coffee-austin.png'
+
+category: 'Community'
+tags:
+  - AI
+  - Documentation
+  - Austin
+  - Claude
+
+members:
+  - name: 'Uncle Tallest aka Jerry'
+    role: 'Founder'
+    social:
+      bsky: 'https://bsky.social/profile/tallest.uncletallest-productions.org'
+      github: 'https://github.com/uncletallest'
+      linkedin: 'https://linkedin.com/in/uncletallest'
+      discord: 'uncletallest'
+  - name: 'Melisa Handley'
+    role: 'Community Manager'
+
+schedule:
+  frequency: 'Bi-weekly'
+  location: 'Austin, TX'
+status: 'Active'
+
+collections:
+  effective-claude-use:
+    output: true
+    permalink: /effective-claude-use/:path/
+  resources:
+    output: true
+    permalink: /resources/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: 'effective-claude-use'
+    values:
+      layout: 'guide'
+  - scope:
+      path: ''
+      type: 'resources'
+    values:
+      layout: 'guide'

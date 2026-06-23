@@ -1,3 +1,8 @@
+---
+layout: guide
+title: 'The Layers: Where Context Lives'
+---
+
 # The Layers: Where Context Lives
 
 ## The Core Problem
@@ -12,9 +17,11 @@ The solution: **tiered loading**. Different types of information live in differe
 ## The Four Layers
 
 ### Layer 1: Personal Preferences (Innermost)
+
 **What it is:** Profile-level setting in Claude's interface. Applies across every conversation, every project, automatically.
 
 **What belongs here:**
+
 - Who you are (background, identity, context)
 - Universal communication patterns (how your brain works)
 - Tone preferences that never change
@@ -25,9 +32,11 @@ The solution: **tiered loading**. Different types of information live in differe
 **Size:** Limited by the UI field - can't be huge. Focus on truly universal patterns.
 
 ### Layer 2: Project Instructions (Project-Specific)
+
 **What it is:** Per-project setting in Claude. Every Project you create can have its own instructions.
 
 **What belongs here:**
+
 - What this specific instance does
 - What it doesn't touch
 - Session opening/closing protocols
@@ -39,9 +48,11 @@ The solution: **tiered loading**. Different types of information live in differe
 **Size:** Also limited by UI field. Keep it focused on operational context for this specific instance.
 
 ### Layer 3: Project Files (Available, Not Forced)
+
 **What it is:** Documents attached directly to a Claude Project. Available to every session without fetching, but they consume context window.
 
 **What belongs here:**
+
 - Communication Guide (if too detailed for Personal Preferences)
 - Recent session summary (the one most likely to matter)
 - Key reference documents consulted frequently
@@ -52,9 +63,11 @@ The solution: **tiered loading**. Different types of information live in differe
 **Critical discipline:** One version at a time. When you update a guide, remove the old version. Keep this layer lean - if something isn't consulted most sessions, it belongs in Layer 4.
 
 ### Layer 4: External Storage (Conditional Loading)
+
 **What it is:** Google Drive, local filesystem, wherever you store working documents.
 
 **What belongs here:**
+
 - Session summary archive (all summaries, not just the most recent)
 - Historical decisions and context
 - Project-specific documents that aren't always relevant
@@ -111,16 +124,21 @@ Ask these questions:
 ## Managing the Layers
 
 ### Layer 1 & 2: Occasional Updates
+
 Personal Preferences and Project Instructions change slowly. Update when you discover new patterns or when the project's purpose shifts.
 
 ### Layer 3: Active Curation
+
 Project Files need regular gardening:
+
 - Remove old versions when you update something
 - If you haven't used a file in 10 sessions, move it to Layer 4
 - Keep this layer tight - it costs context window
 
 ### Layer 4: Archive and Organize
+
 External storage can grow freely, but organization matters:
+
 - Use timestamp-based naming (`YYYYMMDD-HHMM_description.md`)
 - Keep related documents in clear folder structures
 - Don't overwrite - create new versions, keep history
@@ -128,11 +146,13 @@ External storage can grow freely, but organization matters:
 ## The Cold-Start Benefit
 
 With this layered system:
+
 - Sessions start fast (Layers 1-3 are already present)
 - Context is relevant (Layer 3 is curated, Layer 4 is fetched intentionally)
 - Nothing important gets forgotten (it's explicitly in one of the layers)
 
 Without it:
+
 - Every session starts by pasting in a bunch of documents
 - You forget what's relevant this time
 - Context window fills with stuff that doesn't matter today
@@ -140,15 +160,19 @@ Without it:
 ## Common Mistakes
 
 ### Mistake 1: Everything in Layer 4
+
 Nothing gets loaded automatically. Every session starts with manual fetching. Overhead never goes away.
 
 ### Mistake 2: Everything in Layer 3
+
 Context window fills with documents you don't need today. Attention gets diluted. Slower, not faster.
 
 ### Mistake 3: Never curating Layer 3
+
 Old versions pile up. Files that haven't been used in months consume space. System degrades instead of improving.
 
 ### Mistake 4: Putting dynamic content in Layer 1 or 2
+
 You end up editing Personal Preferences every week. That's a signal the information belongs in Layer 3 or 4.
 
 ## Evolution Over Time

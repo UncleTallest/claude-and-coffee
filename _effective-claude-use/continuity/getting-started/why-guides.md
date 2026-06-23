@@ -1,3 +1,8 @@
+---
+layout: guide
+title: 'Why Communication Guides?'
+---
+
 # Why Communication Guides?
 
 ## The Problem
@@ -5,6 +10,7 @@
 Most people discover they need a Communication Guide after getting annoyed at Claude for the third time in a row.
 
 Classic triggers:
+
 - Claude keeps asking too many questions at once
 - It's being relentlessly chipper when you just want to get something done
 - It keeps adding caveats you didn't ask for
@@ -19,25 +25,31 @@ Think of it as calibration. Without it, every session starts cold. Claude has to
 ## What Goes In One
 
 ### How you think and talk
+
 - Do you think out loud and sharpen as you go, or come in with fully formed asks?
 - Do you answer in bullet lists?
 - Do you use profanity as punctuation?
 - Do you want blunt feedback or a softer frame?
 
 ### What works
+
 Specific things that actually land:
+
 - "Show me a draft rather than describing what a draft could say"
 - "Give me options when I'm stuck on a word"
 - "Name the tradeoff when there are two valid paths"
 
 ### What doesn't work
+
 The stuff that makes you want to close the tab:
+
 - Affirmations
 - Too many questions
 - A specific punctuation mark you hate (em-dashes are a common casualty)
 - Unnecessary explanations of obvious things
 
 ### Context that changes calibration
+
 - Your background
 - Your expertise level in relevant areas
 - How to read your emotional register accurately
@@ -62,4 +74,4 @@ Once you understand why you need a guide, learn [how to structure one effectivel
 
 ---
 
-**Key Insight:** You don't need a Communication Guide to use Claude. You need one to use Claude *well*, repeatedly, without friction.
+**Key Insight:** You don't need a Communication Guide to use Claude. You need one to use Claude _well_, repeatedly, without friction.

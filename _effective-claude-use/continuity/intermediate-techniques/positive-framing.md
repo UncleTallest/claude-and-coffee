@@ -1,3 +1,8 @@
+---
+layout: guide
+title: "Positive Framing: `Do This` vs `Don't` Do That"
+---
+
 # Positive Framing: "Do This" vs "Don't Do That"
 
 ## The Pattern
@@ -11,11 +16,13 @@ Claude is predicting what good output looks like. "Don't use bullet points" tell
 ## Why This Matters
 
 When you write instructions negatively, Claude has to:
+
 1. Understand the constraint (don't do X)
 2. Infer what you want instead (probably Y? maybe Z?)
 3. Hope it guessed right
 
 When you write instructions positively, Claude:
+
 1. Understands the target (do X)
 2. Produces X
 
@@ -49,6 +56,7 @@ Less inference, fewer failure modes.
 "Write in prose, not bullet points" gives both the target and the fence.
 
 This is clearer than either alone:
+
 - Positive only: "Write in prose" (but Claude might still use bullets for lists)
 - Negative only: "Not bullet points" (but what format instead?)
 - Combined: "Prose, not bullets" (target + constraint = clear instruction)
@@ -67,11 +75,13 @@ But even here, you can often strengthen it:
 ## Applying This to Your Communication Guide
 
 Review your guide for negative instructions. Ask:
+
 - What do I want instead?
 - Can I say that directly?
 
 Transform:
-- ❌ "Don't be sycophantic" 
+
+- ❌ "Don't be sycophantic"
 - ✅ "Question my assumptions. Push back when you disagree. Be a peer, not a pet."
 
 The second version gives Claude actual behavior to produce, not just behavior to avoid.
@@ -93,6 +103,7 @@ Positive framing combines with specificity:
 You might think: "Obviously if I say don't use bullets, Claude will use prose."
 
 Maybe. Or maybe Claude will use:
+
 - Numbered lists
 - Definition lists
 - Headers without content
@@ -104,11 +115,11 @@ Saying "use prose" removes the ambiguity.
 
 Take one negative instruction from your Communication Guide:
 
-**"Don't ____"**
+**"Don't \_\_\_\_"**
 
 Rewrite it as:
 
-**"Do ____"**
+**"Do \_\_\_\_"**
 
 Then ask: Is the second version clearer to someone who doesn't share my context?
 

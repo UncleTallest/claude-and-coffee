@@ -1,3 +1,8 @@
+---
+layout: guide
+title: 'The Continuity Stack'
+---
+
 # The Continuity Stack
 
 ## How the Pieces Work Together
@@ -13,9 +18,11 @@ You can't give Claude memory. But you can give Claude a filing system that recon
 ## The Three-Layer Stack
 
 ### Layer 1: The Static Layer (How You Work Together)
+
 **Communication Guide** handles this.
 
 What it contains:
+
 - How you think and communicate
 - What works and what doesn't
 - Context about you that doesn't change session to session
@@ -25,9 +32,11 @@ Why it matters: Without this, every session starts with Claude guessing how to c
 Where it lives: Personal Preferences (universal patterns) or Project Files (detailed guide)
 
 ### Layer 2: The Dynamic Layer (Where You Are)
+
 **Session Summaries** handle this.
 
 What they contain:
+
 - Current state of work
 - Decisions made and why
 - What's in progress, what's blocked
@@ -38,9 +47,11 @@ Why it matters: Without this, you re-explain context every session. With it, Cla
 Where they live: Project Files (most recent) or External Storage (archive)
 
 ### Layer 3: The Reference Layer (Resources and History)
+
 **Project Files and External Storage** handle this.
 
 What they contain:
+
 - Historical decisions and rationale
 - Templates and examples
 - Domain-specific reference materials
@@ -53,6 +64,7 @@ Where it lives: Project Files (frequently consulted) or External Storage (on-dem
 ## The Session Cycle
 
 ### Opening a Session
+
 1. **Personal Preferences** load automatically (Layer 1: universal patterns)
 2. **Project Instructions** load automatically (Layer 2: project context)
 3. **Project Files** are present (Layer 3: recent summary, communication guide)
@@ -61,10 +73,13 @@ Where it lives: Project Files (frequently consulted) or External Storage (on-dem
 Claude arrives calibrated (Personal Preferences), knows what this project is (Project Instructions), and has immediate context about where you left off (recent summary in Project Files).
 
 ### During the Session
+
 You work. Claude references the loaded context. If something from history matters, you or Claude fetches it from External Storage.
 
 ### Closing the Session
+
 Claude generates a summary:
+
 - What got decided
 - What changed
 - What's in progress
@@ -73,6 +88,7 @@ Claude generates a summary:
 You review it, fix anything Claude misweighted, and file it. The most recent summary might replace what's in Project Files. Older summaries archive to External Storage.
 
 ### Next Session Opens
+
 The cycle repeats. But each time, there's slightly more accumulated context. The system gets cheaper to open and richer in usable history.
 
 ## The Compounding Effect
@@ -86,6 +102,7 @@ The cycle repeats. But each time, there's slightly more accumulated context. The
 **Session 50:** Compound benefit. The decision history and context archive are genuinely valuable reference material.
 
 This only works if:
+
 - You consistently create summaries
 - You load them when relevant
 - You curate what's in Project Files
@@ -98,6 +115,7 @@ Skipping sessions breaks the chain. Letting summaries pile up without reading th
 Some people think: "Why not just keep one long ongoing conversation?"
 
 Problems with that approach:
+
 1. **Context degrades over very long windows** - earlier material gets less weight
 2. **Can't work across instances** - each instance only knows its own thread
 3. **Can't search or audit** - finding something from three weeks ago is impossible
@@ -110,12 +128,14 @@ Structured summaries + loaded guides give you something more like a filing syste
 Claude has a memory feature. Why not just use that?
 
 Memory supplements this system, it doesn't replace it:
+
 - Memory entries are generated automatically - you don't always know what got captured
 - Memory can drift or misweight things over time
 - Memory has no explicit structure - it's opaque
 - Memory doesn't give you historical audit trail
 
 The continuity stack gives you:
+
 - **Explicit control** over what gets remembered
 - **Auditability** - you can read summaries and see exactly what was captured
 - **Portability** - documents travel across instances and model versions
@@ -138,15 +158,19 @@ A new model reads the same guide and lands in roughly the same working relations
 ## Common Failure Modes
 
 ### Failure 1: Building Without Using
+
 You create all the documents but never load them. Overhead without benefit.
 
 ### Failure 2: Using Without Maintaining
+
 You load documents but never update them. Stale information compounds, system degrades.
 
 ### Failure 3: Overloading Context
+
 You load everything every time. Context window fills with irrelevant material, attention dilutes.
 
 ### Failure 4: Underloading Context
+
 You load nothing. Every session re-explains. The system provides no benefit.
 
 **The balance:** Load what matters today, fetch history as needed, maintain what's loaded.
@@ -156,6 +180,7 @@ You load nothing. Every session re-explains. The system provides no benefit.
 Don't build this all at once.
 
 **Minimum to start:**
+
 1. Personal Preferences (who you are, how you communicate)
 2. One Communication Guide (even a rough one)
 3. Basic session close habit (write down what happened, what's next)
@@ -163,6 +188,7 @@ Don't build this all at once.
 That's enough to feel the difference.
 
 Then grow:
+
 - Project Instructions when you create a dedicated project
 - Project Files when you're referencing the same documents most sessions
 - External Storage when history accumulates enough to matter
